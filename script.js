@@ -15,16 +15,26 @@ let allBooks = [];
 let newBook;
 let closeButton;
 
-function Book(title, author, pages, image, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.image = image
-    this.info = function() {
+class Book {
+    constructor(title, author, pages, image, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.image = image;
+    }
+    info() {
         return `${title}, ${author}, ${pages}, ${read}`
     }
+    func() {
+        console.log(title + ' ' + author + ' ' + pages + ' ' + read)
+    }
+    functo(){
+       const {title, author, pages, image, read} = this;
+       console.log(title + ' ' + author + ' ' + pages + ' ' + image)
+    }
 }
+
 
 submit.addEventListener('click', (event) =>{
     event.preventDefault()
