@@ -1,0 +1,235 @@
+body  {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 10, 10);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 30px 10px;
+    font-size: 2rem;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.986), rgba(34, 34, 34, 0.897)), url(/img/books.jpg);
+    border-bottom: 5px solid rgb(0, 68, 255);
+}
+
+header {
+    color: white;
+    text-shadow: 0.2px 1px gray;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  text-shadow: rgba(65, 66, 65, 0.781) 1px 1px;
+}
+
+.button-container {
+    position: absolute;
+    z-index: 2;
+    margin-top: 120px;
+    margin-left: 614px;
+}
+
+.add-btn {
+    border: none;
+    background-color: rgb(0, 68, 255);
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 75px;
+}
+
+.book {
+    margin-top: 40px;
+    color: white;
+    background-color: #3b3a3ac9;
+    padding: 3px;
+    width: 15%;
+    border: 3px solid rgb(0, 68, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  3px 3px #8888881a;
+    margin-right: 100px;
+}
+
+.title {
+    margin-top: -1px;
+}
+
+.author {
+    margin-top: -16px;
+}
+
+.book-img {
+    max-width: 250px;
+    max-height: 250px;
+    border: 2px solid #88888880;
+}
+
+.check-container  {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    margin-left: 75px;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  .check-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .check-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .check-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .check-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .form {
+    color: white;
+    position: absolute;
+    margin-left: 471px;
+    margin-top: 40px;
+    width: 406px;
+    background-color: #131313fb;
+    height: 600px;
+    border: 5px solid rgb(44, 44, 44);
+    z-index: 3;
+    border-radius: 20px;
+    text-align: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #inputStyle {
+    height: 25px;
+    width: 95%;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 10px;
+  }
+
+  #inputStyle:focus {
+    background-color: #f0f0f0;
+    outline: none;
+  }
+
+.authorName {
+  margin-top: 25px;
+}
+
+.image {
+  margin-top: 25px;
+}
+
+.smallContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.nums {
+  margin-top: 25px;
+}
+
+#inputNumStyle {
+  height: 25px;
+  width: 50%;
+  border-radius: 15px;
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 5px;
+  outline: none;
+}
+
+.submitButtons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.submitButtons > button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+
+.submitButtons > button:hover {
+  box-shadow: 0 12px 16px 0 rgba(139, 139, 139, 0.74),0 17px 50px 0 rgba(122, 122, 122, 0.19);
+}
+
+.check {
+  margin-top: 10px;
+}

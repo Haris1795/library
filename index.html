@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form" hidden>
+        <h2>ADD A NEW BOOK</h2>
+        <form class="info" action="">
+            <label for="bookName" class="bookName">Book Name:</label>
+            <input type="text" name="bookName" id="inputStyle">
+            <label for="bookName" class="authorName">Author Name:</label>
+            <input type="text" name="authorName" id="inputStyle"> 
+            <label for="bookName" class="image">Image URL:</label>
+            <input type="text" placeholder="A default image is provided" name="imageLink" id="inputStyle">
+            <label for="" class="nums">Number of Pages:</label>
+            <input type="number" name="pageNum" id="inputNumStyle">
+            <label class="check-container check">Read
+                <input type="checkbox" class="checkyBox">
+                <span class="checkmark"></span>
+            </label>
+            <div class="submitButtons">
+                <button type="submit" class="bookSubmit">SUBMIT</button>
+                <button type="submit" class="cancel">CANCEL</button>
+            </div>
+        </form>
+    </div>
+    <div class="button-container">
+        <button class="add-btn" onclick="openForm()">+ ADD BOOK</button>
+    </div>
+    <main>
+        <div class="container">
+            <header>
+            <a href=".//index.html">Your Personal Library</a>
+            </header>
+        </div>
+        <div class="books-container">
+            <div class="book">
+                <h4 class="title">River Of Stars</h4>
+                <p class="author">Guy Gavriel Kay</p>
+                <img src="/img/riverofstars.jpg" alt="" class="book-img">
+                <p class="pages">560 Pages</p>
+                <label class="check-container">Read
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
