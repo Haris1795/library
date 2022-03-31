@@ -114,10 +114,10 @@ function createBook(book) {
     }
 }
 
-function fuck() {
+function test() {
     closeButton = document.querySelector('.close')
     closeButton.addEventListener('click', () => {
-        console.log('jebo te bog')
+        console.log('a')
     })
 }
 
